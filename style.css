@@ -309,7 +309,7 @@ a{text-decoration: none;}
     margin-bottom: 40px;
 }
 
-.single-slide a{
+.single-slide .btn-1 a{
     font-size: 15px;
     color: #ffffff;
     font-weight: 700;
