@@ -207,7 +207,24 @@ a{text-decoration: none;}
     background-position: center;
     text-align: center;
 }
-
+.active .single-slide h4, .active .single-slide h2, .active .single-slide a,{
+    animation-name:fadeInUp;
+    animation-duration:1s;
+    animation-fill-mode:both;
+}
+.active .single-slide h4{animation-delay:0.2s}
+.active .single-slide h2{animation-delay:0.6s}
+.active .single-slide a{animation-delay:1.2s}
+@keyframes fadeInUp{
+    0%{
+      opacity:0;
+        transform:translate3d(0,100%,0);
+    }
+   100%{
+      opacity:1;
+        transform:none;
+    }
+}
 .single-slide h4{
     font-size: 30px;
     color: #ffffff;
