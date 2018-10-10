@@ -74,6 +74,7 @@ a{text-decoration: none;}
 .single-slide .btn-1::before{
   right: 0;
   top: 0;
+  z-index: 111;
 }
 .single-slide .btn-1::after{
   left: 0;
