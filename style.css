@@ -46,6 +46,7 @@ a{text-decoration: none;}
   position: absolute;
   transition: all 0.2s linear;
   background: #fff;
+    z-index:111;
 }
 
 .single-slide .btn-1 a::before, .single-slide .btn-1 a::after{
