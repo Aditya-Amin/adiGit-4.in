@@ -247,8 +247,29 @@ a{text-decoration: none;}
     background: #4272d7;
     padding: 20px 40px;
     display: inline-block;
+    position:relative;
+}
+.single-slide a::before{
+   position:absolute;
+    content:"";
+    background:#fff;
+    width:0%;
+    height:2px;
+    top:0;
+    left:0;
+}
+.single-slide a::after{
+   position:absolute;
+    content:"";
+    background:#fff;
+    width:0%;
+    height:2px;
+    bottom:0;
+    right:0;
 }
 
+.single-slide a:hover::before{width:100%}
+.single-slide a:hover::after{width:100%}
 /* buttons */
 .slider-active .owl-nav button div{
     position: absolute;
