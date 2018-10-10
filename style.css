@@ -318,28 +318,7 @@ button:hover a::before, button:hover a::after{
     display: inline-block;
     position:relative;
 }
-.single-slide a::before,
-.single-slide a::after{
-   position:absolute;
-    content:"";
-    background:#fff;
-    width:0%;
-    height:2px;
-    transition:0.3s ease;
-    transition-delay:0.2s;
-}
-.single-slide a::before{
-  top:0;
-  left:0;
-}
-.single-slide a::after{
-    bottom:0;
-    right:0;
-}
 
-.single-slide a:hover::before,
-.single-slide a:hover::after
-{width:100%}
 /* buttons */
 .slider-active .owl-nav button div{
     position: absolute;
