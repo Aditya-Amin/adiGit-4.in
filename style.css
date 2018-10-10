@@ -207,7 +207,7 @@ a{text-decoration: none;}
     background-position: center;
     text-align: center;
 }
-.active .single-slide h4, .active .single-slide h2, .active .single-slide a,{
+.active .single-slide h4, .active .single-slide h2, .active .single-slide a{
     animation-name:fadeInUp;
     animation-duration:1s;
     animation-fill-mode:both;
