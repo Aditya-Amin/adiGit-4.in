@@ -27,7 +27,7 @@ a{text-decoration: none;}
     padding: 0px 0px;
 }
 
-btn-1{
+.btn-1{
   display: inline-block;
   position: relative;
   background: none;
@@ -39,7 +39,7 @@ btn-1{
   background: rgba(0,0,0,0.09);
 }
 
-btn-1::before, btn-1::after{
+.btn-1::before, .btn-1::after{
   content:"";
   width: 0;
   height: 2px;
@@ -48,7 +48,7 @@ btn-1::before, btn-1::after{
   background: #fff;
 }
 
-btn-1 a::before, btn-1 a::after{
+.btn-1 a::before, .btn-1 a::after{
   content:"";
   width:2px;
   height:0;
@@ -56,10 +56,10 @@ btn-1 a::before, btn-1 a::after{
   transition: all 0.2s linear;
   background: #fff;
 }
-btn-1:hover::before, btn-1:hover::after{
+.btn-1:hover::before, .btn-1:hover::after{
   width: 100%;
 }
-btn-1:hover a::before, btn-1:hover a::after{
+.btn-1:hover a::before, .btn-1:hover a::after{
   height: 100%;
 }
 /*----- button 1 -----*/
