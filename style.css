@@ -39,14 +39,15 @@ a{text-decoration: none;}
   background: rgba(0,0,0,0.09);
 }
 
-.single-slide .btn-1::before, .btn-1::after{
+.single-slide .btn-1::before, 
+.single-slide .btn-1::after{
   content:"";
   width: 0;
   height: 2px;
   position: absolute;
   transition: all 0.2s linear;
   background: #fff;
-    z-index:111;
+  z-index:111;
 }
 
 .single-slide .btn-1 a::before, .single-slide .btn-1 a::after{
