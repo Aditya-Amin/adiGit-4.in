@@ -27,7 +27,7 @@ a{text-decoration: none;}
     padding: 0px 0px;
 }
 
-button{
+btn-1{
   display: inline-block;
   position: relative;
   background: none;
@@ -38,11 +38,8 @@ button{
   margin: 20px 30px;
   background: rgba(0,0,0,0.09);
 }
-a{
-  display: block;
-  padding: 25px 80px;
-}
-button::before, button::after{
+
+btn-1::before, btn-1::after{
   content:"";
   width: 0;
   height: 2px;
@@ -51,7 +48,7 @@ button::before, button::after{
   background: #fff;
 }
 
-button a::before, button a::after{
+btn-1 a::before, btn-1 a::after{
   content:"";
   width:2px;
   height:0;
@@ -59,10 +56,10 @@ button a::before, button a::after{
   transition: all 0.2s linear;
   background: #fff;
 }
-button:hover::before, button:hover::after{
+btn-1:hover::before, btn-1:hover::after{
   width: 100%;
 }
-button:hover a::before, button:hover a::after{
+btn-1:hover a::before, btn-1:hover a::after{
   height: 100%;
 }
 /*----- button 1 -----*/
