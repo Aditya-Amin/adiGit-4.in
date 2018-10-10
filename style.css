@@ -38,7 +38,7 @@ button{
   margin: 20px 30px;
   background: rgba(0,0,0,0.09);
 }
-span{
+a{
   display: block;
   padding: 25px 80px;
 }
@@ -51,7 +51,7 @@ button::before, button::after{
   background: #fff;
 }
 
-span::before, span::after{
+button a::before, button a::after{
   content:"";
   width:2px;
   height:0;
@@ -62,14 +62,14 @@ span::before, span::after{
 button:hover::before, button:hover::after{
   width: 100%;
 }
-button:hover span::before, button:hover span::after{
+button:hover a::before, button:hover a::after{
   height: 100%;
 }
 /*----- button 1 -----*/
 .btn-1::before, .btn-1::after{
   transition-delay: 0.2s;
 }
-.btn-1 span::before, .btn-1 span::after{
+.btn-1 a::before, .btn-1 a::after{
   transition-delay: 0s;
 }
 .btn-1::before{
@@ -80,18 +80,18 @@ button:hover span::before, button:hover span::after{
   left: 0;
   bottom: 0;
 }
-.btn-1 span::before{
+.btn-1 a::before{
   left: 0;
   top: 0;
 }
-.btn-1 span::after{
+.btn-1 a::after{
   right: 0;
   bottom: 0;
 }
 .btn-1:hover::before, .btn-1:hover::after{
   transition-delay: 0s;
 }
-.btn-1:hover span::before, .btn-1:hover span::after{
+.btn-1:hover a::before, .btn-1:hover a::after{
   transition-delay: 0.2s;
 }
 
