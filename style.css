@@ -263,19 +263,33 @@ a{text-decoration: none;}
 
 .slider-active{
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 
 .single-slide{
     width: 100%;
     padding-top: 180px;
     padding-bottom: 200px;
-    background-image: url(images/slider/slide1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
+    z-index: 999;
+    position: relative;
 }
+
+.single-slide::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 1;
+}
+
 .active .single-slide h4, .active .single-slide h2, .active .single-slide a{
     animation-name:fadeInUp;
     animation-duration:1s;
@@ -299,6 +313,8 @@ a{text-decoration: none;}
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 400;
+    z-index: 999;
+    position: relative;
 }
 
 .single-slide h2{
@@ -307,6 +323,8 @@ a{text-decoration: none;}
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 40px;
+    z-index: 999;
+    position: relative;
 }
 
 .single-slide .btn-1 a{
@@ -316,7 +334,8 @@ a{text-decoration: none;}
     background: #4272d7;
     padding: 20px 40px;
     display: inline-block;
-    position:relative;
+    z-index: 9999999;
+    position: relative;
 }
 
 /* buttons */
@@ -408,6 +427,7 @@ a{text-decoration: none;}
 .single-feature{
   position: relative;
   overflow: hidden;
+  height: 250px;
 }
 
 .single-feature:hover .feature-content{
@@ -555,6 +575,7 @@ a{text-decoration: none;}
     width: 100%;
     position: relative;
     overflow: hidden;
+    height: 250px;
   }
 
   .single-project:hover 
@@ -570,6 +591,7 @@ a{text-decoration: none;}
 
   .project-img{
      width: 100%;
+     height: 100%;
   }
 
   .project-content{
